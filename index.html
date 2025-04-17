@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgb(153,127,255);
+        }
+
+         .navbar ul {
+            background-color: rgb(153, 127, 255);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            width: 100%;
+            margin: 0;
+        }
+        
+        .navbar li {
+            margin: auto 15px;
+        }
+        
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2.5rem;
+            color:rgba(153,127,255)
+        }
+
+        section {
+            padding: 40px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: rgb(153,127,255);
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        .center-text {
+            max-width: 800px;
+            margin: 0 auto; 30px
+        }
+
+        .profile-image {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            margin: 20px auto;
+            object-fit: cover;
+            border: 5px solid rgb(153,127,255);
+            display: block;
+            background-color: #f0f0f0
+        }
+        
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            flex: 0 0 calc(50% - 20px);
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .interests-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: nowwrap;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+
+        .interest-box {
+            flex: 0 0 200px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        #contact {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact-box {
+            flex: 1 0 200px;
+            max-width: 250px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: rgb(153,127,255);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .skill-box {
+                flex: 0 0 100%;
+            }
+
+            .interests-container {
+                justify-content: flex-start;
+            }
+
+            .contact-box {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar" >
+            <ul>
+                <li><a href="#about">About!</a></li>
+                <li><a href="#skills">Skills!</a></li>
+                <li><a href="#interests">Interests!</a></li>
+                <li><a href="#contact">Contact!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+    <h1>RADHIKA GANESH</h1>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>ABOUT ME.</h2>
+            <p class="center-text">Heyy! I'm Radhika!! i'm someone who's curious enough to delve and explore into different fields 
+                and learn new things like AI and ML. I am currently a student at Super30, where I am learning web development, along with a few other technical skills.
+                I also have a keen interest in photography and designing.
+            </p>
+            <img src="/Users/radhika/Desktop/super30_bootcamp/radhika.jpg" alt="Radhika" class="profile-img">
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>MY SKILLS.</h2>
+            <div class="skills-container">
+                <div class="skill-box">Python</div>
+                <div class="skill-box">Machine Learning</div>
+                <div class="skill-box">C and C++</div>
+                <div class="skill-box">Designing</div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests">
+            <h2>MY INTERESTS.</h2>
+            <div class="interests-container">
+                <div class="interest-box">AI & ML</div>
+                <div class="interest-box">Photography</div>
+                <div class="interest-box">Vlogging</div>
+                <div class="interest-box">Blogging</div>
+                <div class="interest-box">Travelling</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <h2>CONTACT ME.</h2>
+        <div class="contact-container">
+            <p>Feel free to reach out to me for any queries or collaborations!</p>
+        <div class="contact-container">
+            <p>Phone No : +91 98765 12340</p>
+            <p>Email-id : itz.me.radhika.14@gmail.com</p>
+            <p>Github : <a href="https://github.com/radhiiiiiiika" target="_blank">github.com/radhiiiiiiika</a></p>
+        </div>
+        <p>&copy; Radhika Ganesh '2025</p>
+    </footer>
+</body>
+</html>
